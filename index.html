@@ -3,17 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Mohamed Abdelmoneim - AI Engineer Portfolio</title>
+    <title>Ahmed M. Abdelmoneim - AI Engineer Portfolio</title>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T3Q3J3XS');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Critical CSS Inline -->
+    <style>
+        /* Critical CSS for above-the-fold content */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Non-critical CSS with optimized loading -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Temporarily disabled async loading for debugging -->
+    <!-- <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript> -->
+    
+    <!-- Optimized font loading with font-display: swap -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+    
+    <!-- SEO and Performance Meta Tags -->
+    <meta name="description" content="Ahmed M. Abdelmoneim - AI Engineer and Researcher specializing in Machine Learning, Deep Learning, NLP, and MLOps. Portfolio showcasing innovative AI projects and research.">
+    <meta name="keywords" content="AI Engineer, Machine Learning, Deep Learning, NLP, MLOps, Python, PyTorch, Azure, AWS">
+    <meta name="author" content="Ahmed M. Abdelmoneim">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Ahmed M. Abdelmoneim - AI Engineer Portfolio">
+    <meta property="og:description" content="AI Engineer and Researcher specializing in Machine Learning, Deep Learning, NLP, and MLOps">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amn3m.github.io">
+    <meta property="og:image" content="https://amn3m.github.io/Pictures/profile.jpg">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ahmed M. Abdelmoneim - AI Engineer Portfolio">
+    <meta name="twitter:description" content="AI Engineer and Researcher specializing in Machine Learning, Deep Learning, NLP, and MLOps">
+    <meta name="twitter:image" content="https://amn3m.github.io/Pictures/profile.jpg">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3Q3J3XS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">Ahmed Mohamed Abdelmoneim</span>
+                <span class="logo-text">AMN3M</span>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -29,10 +165,16 @@
                     <a href="#experience" class="nav-link">Experience</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
                     <a href="#skills" class="nav-link">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#leadership" class="nav-link">Leadership</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link">Certifications</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
@@ -59,17 +201,19 @@
                         <span class="typing-text"></span>
                     </p>
                     <p class="hero-description">
-                        Highly skilled AI student at Nile University with expertise in machine learning, data analysis, and software engineering.
-                        Passionate about developing innovative AI-driven solutions and contributing to cutting-edge research.
+                        Motivated and accomplished AI Engineer with hands-on experience in machine learning, deep learning, NLP, MLOps, and big data. Proven track record of developing production-grade AI systems, award-winning research projects, and optimized models deployed via cloud infrastructure (Azure, AWS). Skilled in Python, C++, SQL, and PyTorch, with a strong foundation in reinforcement learning and LLM pipelines.
                     </p>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn btn-primary">Get In Touch</a>
                         <a href="#about" class="btn btn-secondary">Learn More</a>
+                        <a href="Ahmed_M__Abdelmoneim.pdf" class="btn btn-outline" download="Ahmed_M__Abdelmoneim.pdf">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
                     </div>
                 </div>
                 <div class="hero-image">
                     <div class="image-container">
-                        <img src="profile.jpg" alt="Ahmed Mohamed Abdelmoneim" class="profile-img">
+                        <img src="Pictures/profile.jpg" alt="Ahmed Mohamed Abdelmoneim" class="profile-img" loading="lazy">
                         <div class="image-overlay"></div>
                     </div>
                 </div>
@@ -91,35 +235,31 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>AI Engineering Student & Researcher</h3>
+                    <h3>AI Engineer & Researcher</h3>
                     <p>
-                        I am a highly motivated Artificial Intelligence student at Nile University with a strong foundation in
-                        machine learning, data analysis, and software engineering. My academic journey has been marked by
-                        excellence, earning a 40% scholarship due to outstanding grades and maintaining a 3.6 GPA.
+                        I am a motivated and accomplished AI Engineer with hands-on experience in machine learning, deep learning, NLP, MLOps, and big data. Currently pursuing a Bachelor of Science in Artificial Intelligence at Nile University with a 3.5 GPA and 40% Merit Scholarship.
                     </p>
                     <p>
-                        With hands-on experience in developing and optimizing machine learning models, I have contributed to
-                        research projects submitted for publication at IEEE. My expertise spans Python, C++, SQL, and various
-                        AI frameworks, combined with practical experience in data engineering and MLOps.
+                        With proven track record of developing production-grade AI systems, award-winning research projects, and optimized models deployed via cloud infrastructure (Azure, AWS). My expertise spans Python, C++, SQL, and PyTorch, with a strong foundation in reinforcement learning and LLM pipelines. Passionate about leveraging AI to solve real-world problems at scale in high-impact environments.
                     </p>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-number" data-target="4">0</span>
                             <span class="stat-label">Years of Study</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number" data-target="10">0</span>
+                            <span class="stat-number" data-target="25">0</span>
                             <span class="stat-label">Projects Completed</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-number" data-target="3">0</span>
                             <span class="stat-label">Research Papers</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
                     <div class="about-img-container">
-                        <img src="profile.jpg" alt="About Ahmed" class="about-img">
+                        <img src="Pictures/profile.jpg" alt="About Ahmed" class="about-img" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -139,31 +279,69 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="education-details">
-                        <h3>Bachelor's Degree in Artificial Intelligence</h3>
-                        <h4>Nile University, Egypt</h4>
+                        <h3>Bachelor of Science in Artificial Intelligence</h3>
+                        <h4>Nile University, Cairo, Egypt</h4>
                         <span class="education-date">Expected Fall 2025</span>
                         <div class="education-achievements">
                             <div class="achievement-item">
                                 <span class="achievement-label">GPA:</span>
-                                <span class="achievement-value">3.6/4.0</span>
+                                <span class="achievement-value">3.5/4.0</span>
                             </div>
                             <div class="achievement-item">
                                 <span class="achievement-label">Scholarship:</span>
                                 <span class="achievement-value">40% Merit-based</span>
                             </div>
                         </div>
-                        <p class="education-description">
-                            Comprehensive curriculum covering machine learning, natural language processing,
-                            data science, deep learning, and AI engineering concepts. Strong foundation in
-                            data structures, algorithms, and statistical analysis.
-                        </p>
                         <div class="education-skills">
-                            <span class="skill-tag">Machine Learning</span>
-                            <span class="skill-tag">Deep Learning</span>
-                            <span class="skill-tag">NLP</span>
-                            <span class="skill-tag">Data Science</span>
-                            <span class="skill-tag">Algorithms</span>
-                            <span class="skill-tag">Statistical Analysis</span>
+                            <div class="skill-group">
+                                <div class="skill-group-header">
+                                    <span class="group-title">Programming & Computer Science</span>
+                                </div>
+                                <div class="skill-tags-row">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">Agile Development</span>
+                                    <span class="skill-tag">Core CS Fundamentals</span>
+                                    <span class="skill-tag">Algorithm Optimization</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-group">
+                                <div class="skill-group-header">
+                                    <span class="group-title">AI & Machine Learning Technologies</span>
+                                </div>
+                                <div class="skill-tags-row">
+                                    <span class="skill-tag">TensorFlow</span>
+                                    <span class="skill-tag">PyTorch</span>
+                                    <span class="skill-tag">CNNs</span>
+                                    <span class="skill-tag">RNNs</span>
+                                    <span class="skill-tag">Transformers</span>
+                                    <span class="skill-tag">Reinforcement Learning</span>
+                                    <span class="skill-tag">LLM Optimization</span>
+                                    <span class="skill-tag">Language Understanding</span>
+                                    <span class="skill-tag">Image Processing</span>
+                                    <span class="skill-tag">Object Detection</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-group">
+                                <div class="skill-group-header">
+                                    <span class="group-title">Data & Cloud Infrastructure</span>
+                                </div>
+                                <div class="skill-tags-row">
+                                    <span class="skill-tag">Tableau</span>
+                                    <span class="skill-tag">Power BI</span>
+                                    <span class="skill-tag">Data Storytelling</span>
+                                    <span class="skill-tag">AWS</span>
+                                    <span class="skill-tag">GCP</span>
+                                    <span class="skill-tag">Azure</span>
+                                    <span class="skill-tag">Spark</span>
+                                    <span class="skill-tag">Hadoop</span>
+                                    <span class="skill-tag">Distributed Processing</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -183,28 +361,31 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Data Engineer Intern</h3>
-                        <h4>Ministry of Communication and Information Technology (DEPI)</h4>
+                        <h4>Ministry of Communications & IT (DEPI)</h4>
                         <span class="timeline-date">April 2024 - December 2024</span>
-                        <p>Developed expertise in SQL and Python programming for data management and analysis. Gained hands-on experience in Azure Data Fundamentals and prepared for Azure Data Engineer Associate Certification.</p>
+                        <p>Designed scalable data pipelines using Microsoft SQL Server, Power BI, and Azure ML. Developed and deployed ML models using Scikit-learn + MLflow with Flask on Azure. Implemented MLOps practices for CI/CD workflows with model tracking and versioning.</p>
                         <ul class="timeline-skills">
-                            <li>SQL Data Warehousing</li>
-                            <li>Azure Cloud Platform</li>
-                            <li>MLOps (MLflow, Hugging Face)</li>
-                            <li>Agile Scrum Methodologies</li>
+                            <li>Microsoft SQL Server</li>
+                            <li>Power BI</li>
+                            <li>Azure ML</li>
+                            <li>MLflow</li>
+                            <li>Flask</li>
+                            <li>MLOps</li>
                         </ul>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Researcher</h3>
-                        <h4>CIS Nile University</h4>
+                        <h3>Junior Research Assistant</h3>
+                        <h4>CIS, Nile University</h4>
                         <span class="timeline-date">July 2024 - September 2024</span>
-                        <p>Developed and optimized machine learning models, contributing to AI research with findings submitted to IEEE for publication. Led a data-driven project from research to submission.</p>
+                        <p>Engineered anomaly detection and big data analytics tools for security applications. Co-authored research submitted to IEEE, optimizing ML algorithms for performance. Led literature reviews, experiments, and technical writing for publication.</p>
                         <ul class="timeline-skills">
-                            <li>Machine Learning Research</li>
+                            <li>Anomaly Detection</li>
+                            <li>Big Data Analytics</li>
+                            <li>Security Applications</li>
                             <li>IEEE Publication</li>
-                            <li>Data Analysis</li>
                             <li>Research Methodology</li>
                         </ul>
                     </div>
@@ -215,15 +396,361 @@
                         <h3>Junior Teaching Assistant</h3>
                         <h4>Nile University</h4>
                         <span class="timeline-date">October 2023 - June 2024</span>
-                        <p>Instructed undergraduates in programming fundamentals using Python and C++. Collaborated with faculty to enhance curriculum delivery and improve student performance.</p>
+                        <p>Taught Python and C++ fundamentals and AI concepts to undergraduates. Developed hands-on labs and supported students in project-based learning.</p>
                         <ul class="timeline-skills">
                             <li>Python Programming</li>
                             <li>C++ Development</li>
+                            <li>AI Concepts</li>
                             <li>Curriculum Development</li>
                             <li>Student Mentoring</li>
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Comprehensive portfolio showcasing the last 12 innovative AI and software engineering projects</p>
+            </div>
+            
+            <!-- Project Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+                <button class="filter-btn" data-filter="web-dev">Web Dev</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+                <button class="filter-btn" data-filter="big-data">Big Data</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- 1. IRIS AI: Multi-Agent Tutoring System -->
+                <div class="project-card" data-category="ai-ml">
+                    <div class="project-badge under-development">🚧 Under Development</div>
+                    <div class="project-image">
+                        <img src="Pictures/1.jpg" alt="IRIS AI" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/amn3m" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/amn3m" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>IRIS AI: Multi-Agent Tutoring System</h3>
+                        <span class="project-date">Dec 2025 | NU Graduation Project</span>
+                        <p class="project-description">Pioneering intelligent tutoring system using multi-agent architecture for visually impaired Arabic-speaking students. Features custom Arabic OCR (QariV03) with 43.0% WER and Qwen-32B LLM integration. <span class="description-more">Advanced speech recognition with Whisper integration and voice synthesis capabilities using MaskGCT for comprehensive accessibility support.</span></p>
+                        <button class="show-more-btn">Show More</button>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Azure</span>
+                            <span class="tech-tag">Whisper</span>
+                            <span class="tech-tag">Qwen-32B</span>
+                            <span class="tech-tag">MaskGCT</span>
+                            <span class="tech-tag">OCR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Multi-Agent RL for ABET Automation -->
+                <div class="project-card" data-category="ai-ml">
+                    <div class="project-image">
+                        <img src="Pictures/2.jpg" alt="Multi-Agent RL" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/amn3m/ABET_Accreditation" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/amn3m/ABET_Accreditation" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Multi-Agent RL for ABET Automation</h3>
+                        <span class="project-date">May 2025 | AIS462: Reinforcement Learning</span>
+                        <p class="project-description">Sophisticated multi-agent reinforcement learning system with four specialized agents using DQN and Optuna for distributed hyperparameter tuning to automate ABET accreditation workflow. <span class="description-more">Implemented reward shaping, experience replay, and target networks for stable training across multiple agents working collaboratively on document processing and evaluation tasks.</span></p>
+                        <button class="show-more-btn">Show More</button>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">DQN</span>
+                            <span class="tech-tag">Optuna</span>
+                            <span class="tech-tag">MARL</span>
+                            <span class="tech-tag">Reinforcement Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Bitcoin Decision Support System -->
+                <div class="project-card" data-category="big-data">
+                    <div class="project-image">
+                        <img src="Pictures/3.jpg" alt="Bitcoin DSS" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/amn3m/Bitcoin-Transaction-Live-Streaming-Decision-Support-System" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/amn3m/Bitcoin-Transaction-Live-Streaming-Decision-Support-System" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Bitcoin Transaction Decision Support System</h3>
+                        <span class="project-date">May 2025 | AIS431: Intelligent Decision Support Systems</span>
+                        <p class="project-description">Comprehensive DSS with ETL pipeline for 460K+ transactions. Achieved 95% fraud detection precision, 98% wallet risk scoring, and deployed ML models via Streamlit dashboard. <span class="description-more">Real-time transaction monitoring with advanced feature engineering, ensemble methods, and interactive visualizations for cryptocurrency risk assessment and anomaly detection.</span></p>
+                        <button class="show-more-btn">Show More</button>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">Prophet</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Isolation Forest</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. MaskGCT Arabic TTS Model -->
+                <div class="project-card" data-category="ai-ml">
+                    <div class="project-image">
+                        <img src="Pictures/4.jpg" alt="Arabic TTS" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/maryamabdallahmohamed/Zeroshot_TTS" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/maryamabdallahmohamed/Zeroshot_TTS" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MaskGCT Arabic TTS Model</h3>
+                        <span class="project-date">May 2025 | AIS302: Artificial Neural Networks</span>
+                        <p class="project-description">Two-stage, non-autoregressive transformer for Arabic Text-to-Speech synthesis. Optimized for resource-constrained hardware with inference loss of 0.9997 using Apple MPS and CUDA. <span class="description-more">Custom attention mechanisms, phonetic alignment, and prosody modeling for natural Arabic speech generation with speaker adaptation capabilities and multi-dialect support.</span></p>
+                        <button class="show-more-btn">Show More</button>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">CUDA</span>
+                            <span class="tech-tag">MPS</span>
+                            <span class="tech-tag">TTS</span>
+                            <span class="tech-tag">Transformers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Sea-Level Rise Forecasting -->
+                <div class="project-card" data-category="big-data">
+                    <div class="project-image">
+                        <img src="Pictures/5.jpg" alt="Sea Level Forecast" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/amn3m/Sea-Level-Rise-Forecasting-for-Fiji" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/amn3m/Sea-Level-Rise-Forecasting-for-Fiji" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sea-Level Rise Forecasting for Fiji</h3>
+                        <span class="project-date">Dec 2024 | CSCI:461 Intro to Big Data & Analytics</span>
+                        <p class="project-description">Scalable big data pipeline using Apache Spark and Hadoop to analyze 20+ years of climate data. Achieved MAE of 0.02 and RMSE of 0.027 with Gradient Boosting models. <span class="description-more">Integrated satellite altimetry data, tide gauge measurements, and climate indices for comprehensive environmental modeling with distributed computing architecture for real-time predictions.</span></p>
+                        <button class="show-more-btn">Show More</button>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LSTM</span>
+                            <span class="tech-tag">Gradient Boosting</span>
+                            <span class="tech-tag">Apache Spark</span>
+                            <span class="tech-tag">Hadoop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Virtual Machine & Docker Manager -->
+                <div class="project-card" data-category="web-dev">
+                    <div class="project-image">
+                        <img src="Pictures/6.jpg" alt="VM Docker Manager" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/amn3m/Virtual-Machine-and-Docker-Manager" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/amn3m/Virtual-Machine-and-Docker-Manager" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Virtual Machine & Docker Manager</h3>
+                        <span class="project-date">Dec 2024 | CSCI463: Cloud Computing and Networking</span>
+                        <p class="project-description">Comprehensive management tool using Python and Tkinter providing unified GUI for controlling VMs via QEMU and Docker containers with lifecycle management. <span class="description-more">Features resource monitoring, automated snapshots, network configuration management, and batch operations with support for multiple hypervisors and container registries.</span></p>
+                        <button class="show-more-btn">Show More</button>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">QEMU</span>
+                            <span class="tech-tag">GUI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. End-to-End Customer Analytics -->
+                <div class="project-card" data-category="web-dev">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Customer Analytics" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/kindahard/DEPI-Final-Project" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/kindahard/DEPI-Final-Project" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>End-to-End Customer Analytics & Churn Prediction</h3>
+                        <span class="project-date">Oct 2024 | Microsoft Data Engineer DEPI</span>
+                        <p class="project-description">Complete data analytics ecosystem with SQL Server database, predictive ML models, and MLOps pipeline using MLflow. Deployed Flask web application on Azure with interactive Power BI dashboards. <span class="description-more">Implemented automated data ingestion, feature engineering pipelines, model versioning, and real-time scoring API with comprehensive monitoring and alerting system.</span></p>
+                        <button class="show-more-btn">Show More</button>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">Azure ML</span>
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Anomaly Detection in Cloud -->
+                <div class="project-card" data-category="research">
+                    <div class="project-image">
+                        <img src="Pictures/7.jpg" alt="Anomaly Detection" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/amn3m/Anomaly-Detection-in-Cloud-Data-Usage-Data-Analysis-Project" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/amn3m/Anomaly-Detection-in-Cloud-Data-Usage-Data-Analysis-Project" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Anomaly Detection in Cloud Data Usage</h3>
+                        <span class="project-date">May 2024 | Machine Learning Research</span>
+                        <p class="project-description">Robust security system using Random Forest, KNN, and Unsupervised Clustering for AWS, Google, and Apple Services. Successfully isolated top 5% anomalous data points. <span class="description-more">Advanced ensemble methods with statistical process control, time-series analysis, and adaptive thresholding for multi-cloud environment security monitoring and threat detection.</span></p>
+                        <button class="show-more-btn">Show More</button>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Random Forest</span>
+                            <span class="tech-tag">KNN</span>
+                            <span class="tech-tag">Clustering</span>
+                            <span class="tech-tag">Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Cloud and Big Data Architecture -->
+                <div class="project-card" data-category="research">
+                    <div class="project-image">
+                        <img src="Pictures/8.jpg" alt="Cloud Architecture" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/amn3m/Cloud-and-Big-Data-Architecture-A-Research-Survey" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/amn3m/Cloud-and-Big-Data-Architecture-A-Research-Survey" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cloud and Big Data Architecture: Research Survey</h3>
+                        <span class="project-date">May 2024 | CSCI311: Computer Architecture</span>
+                        <p class="project-description">Comprehensive research paper analyzing synergistic architecture of cloud computing and big data, outlining frameworks for efficiency, scalability, and innovation in data management. <span class="description-more">In-depth analysis of distributed computing paradigms, containerization strategies, microservices architecture, and edge computing integration for next-generation data processing platforms.</span></p>
+                        <button class="show-more-btn">Show More</button>
+                        <div class="project-tech">
+                            <span class="tech-tag">Research</span>
+                            <span class="tech-tag">Cloud Computing</span>
+                            <span class="tech-tag">Big Data</span>
+                            <span class="tech-tag">IaaS</span>
+                            <span class="tech-tag">Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Automated Object Counter -->
+                <div class="project-card" data-category="ai-ml">
+                    <div class="project-image">
+                        <img src="Pictures/9.jpg" alt="Object Counter" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/amn3m/Automated-Object-Counter" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/amn3m/Automated-Object-Counter" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Automated Object Counter</h3>
+                        <span class="project-date">May 2024 | AIS351: Digital Image Processing</span>
+                        <p class="project-description">Computer vision application for automated object counting from images and real-time video streams with intuitive GUI, replacing manual counting methods. <span class="description-more">Advanced image segmentation using watershed algorithms, contour detection, and morphological operations with support for multiple object types and complex backgrounds.</span></p>
+                        <button class="show-more-btn">Show More</button>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">GUI</span>
+                            <span class="tech-tag">Real-time</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Real-Time Sign Language Translator -->
+                <div class="project-card" data-category="ai-ml">
+                    <div class="project-image">
+                        <img src="Pictures/10.jpg" alt="Sign Language" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://www.linkedin.com/posts/ahmed-m-abdelmoneim_ugrf-accessibility-python-activity-7195824880632623104-YPK1" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://www.linkedin.com/posts/ahmed-m-abdelmoneim_ugrf-accessibility-python-activity-7195824880632623104-YPK1" class="project-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-Time Sign Language Translator</h3>
+                        <span class="project-date">2024 | UGRF Competition</span>
+                        <p class="project-description">🏆 First Place Winner - Engineered a Python-based application for real-time sign language translation, enhancing communication for individuals with speech and hearing impairments. <span class="description-more">Custom CNN architecture with temporal modeling, gesture recognition pipeline, and natural language generation for seamless sign-to-speech conversion with 95% accuracy on ASL dataset.</span></p>
+                        <button class="show-more-btn">Show More</button>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">MediaPipe</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Accessibility</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Graph Coloring Optimization -->
+                <div class="project-card" data-category="ai-ml">
+                    <div class="project-image">
+                        <img src="Pictures/11.jpg" alt="Graph Coloring" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/amn3m/Graph-Coloring-Optimization-with-Genetic-Algorithms" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/amn3m/Graph-Coloring-Optimization-with-Genetic-Algorithms" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Graph Coloring Optimization with Genetic Algorithms</h3>
+                        <span class="project-date">Dec 2023 | AIS201: Intro to AI</span>
+                        <p class="project-description">Advanced graph coloring solver using custom-built Genetic Algorithm with tournament selection, multi-point crossover, and mutation for finding minimum chromatic numbers. <span class="description-more">Adaptive fitness functions, elitism strategies, and parallel population evolution with constraint satisfaction techniques for solving NP-hard graph optimization problems efficiently.</span></p>
+                        <button class="show-more-btn">Show More</button>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Genetic Algorithms</span>
+                            <span class="tech-tag">Optimization</span>
+                            <span class="tech-tag">Graph Theory</span>
+                            <span class="tech-tag">Heuristics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Show More Projects Button -->
+            <div class="projects-show-more">
+                <button class="show-more-projects-btn" id="showMoreProjectsBtn">
+                    <span class="btn-text">Show More Projects</span>
+                    <i class="fas fa-chevron-down chevron"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -237,7 +764,7 @@
             </div>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Programming & Development</h3>
+                    <h3>Languages</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <span class="skill-name">Python</span>
@@ -269,37 +796,189 @@
                                 <div class="skill-progress" data-width="80%"></div>
                             </div>
                         </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Bash</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>AI & Data Science</h3>
+                    <h3>AI & Machine Learning</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span class="skill-name">Machine Learning</span>
+                            <span class="skill-name">PyTorch</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="92%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">TensorFlow</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">PyTorch</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Data Analysis</span>
+                            <span class="skill-name">Scikit-learn</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">MLOps</span>
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Transformers</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NLP & LLMs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">XGBoost</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>MLOps & Deployment</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">MLflow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Flask</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Streamlit</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitHub Actions</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CI/CD</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Big Data & Cloud</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Azure ML</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Apache Spark</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Hadoop</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL Server</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Google Cloud</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Visualization & Analytics</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Power BI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tableau</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Matplotlib</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Seaborn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Environments</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Jupyter</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Conda</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="82%"></div>
                             </div>
@@ -310,75 +989,104 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Leadership & Activities Section -->
+    <section id="leadership" class="leadership">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Some of my recent work</p>
+                <h2 class="section-title">Leadership & Activities</h2>
+                <p class="section-subtitle">Community engagement and leadership experience</p>
             </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/2563eb/ffffff?text=Customer+Data+Analysis" alt="Customer Data Analysis">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="https://github.com/kindahard/DEPI-Final-Project"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="https://github.com/kindahard/DEPI-Final-Project"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
+            <div class="leadership-content">
+                <div class="leadership-item">
+                    <div class="leadership-icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    <div class="project-content">
-                        <h3>Customer Data Analysis System</h3>
-                        <p>Built a comprehensive system for storing, analyzing, and extracting insights from customer data. Implemented predictive models for customer churn and deployed using MLflow.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">Azure</span>
-                            <span class="tech-tag">Power BI</span>
-                            <span class="tech-tag">MLflow</span>
+                    <div class="leadership-details">
+                        <h3>Operations Team Member</h3>
+                        <h4>Nile University Entrepreneurship Club</h4>
+                        <span class="leadership-date">October 2022 - September 2023</span>
+                        <p>Led planning, logistics, and optimization for tech entrepreneurship events. Coordinated with multiple stakeholders to ensure successful execution of club activities and workshops focused on innovation and startup development.</p>
+                        <div class="leadership-skills">
+                            <span class="skill-tag">Event Planning</span>
+                            <span class="skill-tag">Logistics Management</span>
+                            <span class="skill-tag">Team Coordination</span>
+                            <span class="skill-tag">Entrepreneurship</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/10b981/ffffff?text=Sign+Language+Translator" alt="Sign Language Translator">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="https://www.linkedin.com/posts/ahmed-m-abdelmoneim_ugrf-accessibility-python-activity-7195824880632623104-YPK1?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpRTbMB_RXvCeBZsWebZRHeAIKzAIJOCCI"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="https://www.linkedin.com/posts/ahmed-m-abdelmoneim_ugrf-accessibility-python-activity-7195824880632623104-YPK1?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpRTbMB_RXvCeBZsWebZRHeAIKzAIJOCCI"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
+                <div class="leadership-item">
+                    <div class="leadership-icon">
+                        <i class="fas fa-calendar-alt"></i>
                     </div>
-                    <div class="project-content">
-                        <h3>Real-Time Sign Language Translator</h3>
-                        <p>🏆 First Place Winner - Engineered a Python-based application for real-time sign language translation, enhancing communication for individuals with speech and hearing impairments.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">MediaPipe</span>
-                            <span class="tech-tag">Computer Vision</span>
+                    <div class="leadership-details">
+                        <h3>Event Organizer</h3>
+                        <h4>Cairo University IEEE WIE Chapter</h4>
+                        <span class="leadership-date">October 2020 - July 2021</span>
+                        <p>Managed technical sessions, venue planning, and sponsor negotiations for Women in Engineering initiatives. Successfully organized multiple events promoting diversity and inclusion in STEM fields.</p>
+                        <div class="leadership-skills">
+                            <span class="skill-tag">Event Management</span>
+                            <span class="skill-tag">Sponsor Relations</span>
+                            <span class="skill-tag">Technical Sessions</span>
+                            <span class="skill-tag">STEM Advocacy</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/f59e0b/ffffff?text=AMAN+Market+System" alt="AMAN Market System">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="https://www.linkedin.com/in/ahmed-m-abdelmoneim"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="https://www.linkedin.com/in/ahmed-m-abdelmoneim"><i class="fab fa-github"></i></a>
-                            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Professional development and continuous learning</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Microsoft Azure Data Engineer Associate</h3>
+                        <span class="certification-status in-progress">📚 In Progress</span>
+                        <p>Comprehensive certification covering Azure data services, data processing, and data security for enterprise-scale data solutions.</p>
+                        <div class="certification-skills">
+                            <span class="skill-tag">Azure Data Factory</span>
+                            <span class="skill-tag">Azure Synapse</span>
+                            <span class="skill-tag">Data Engineering</span>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>AMAN Market Management System</h3>
-                        <p>🏆 First Place Winner - Developed a Python market system transitioning from Microsoft Access to SQLite3, enhancing scalability and performance with OOP principles.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python 3.11</span>
-                            <span class="tech-tag">SQLite3</span>
-                            <span class="tech-tag">OOP</span>
-                            <span class="tech-tag">Database Design</span>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Hugging Face NLP Certificate</h3>
+                        <span class="certification-status targeted">🎯 Targeted</span>
+                        <p>Advanced natural language processing certification focusing on transformer models, tokenization, and modern NLP techniques.</p>
+                        <div class="certification-skills">
+                            <span class="skill-tag">Transformers</span>
+                            <span class="skill-tag">BERT</span>
+                            <span class="skill-tag">GPT</span>
+                            <span class="skill-tag">NLP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>DeepLearning.AI Reinforcement Learning Specialization</h3>
+                        <span class="certification-status targeted">🎯 Targeted</span>
+                        <p>Comprehensive specialization covering reinforcement learning algorithms, deep Q-networks, and policy gradient methods.</p>
+                        <div class="certification-skills">
+                            <span class="skill-tag">Deep RL</span>
+                            <span class="skill-tag">Q-Learning</span>
+                            <span class="skill-tag">Policy Gradients</span>
+                            <span class="skill-tag">Multi-Agent RL</span>
                         </div>
                     </div>
                 </div>
@@ -399,6 +1107,9 @@
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <span>menem.dev@gmail.com</span>
+                        <button class="copy-email-btn" onclick="copyEmail()" title="Copy email address">
+                            <i class="fas fa-copy"></i>
+                        </button>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
@@ -439,6 +1150,25 @@
         </div>
     </section>
 
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <img id="modalImage" src="" alt="">
+                <div class="modal-title-section">
+                    <h2 id="modalTitle"></h2>
+                    <span id="modalDate"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p id="modalDescription"></p>
+                <div id="modalTech" class="project-tech"></div>
+                <div id="modalLinks" class="modal-links"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -446,6 +1176,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script-optimized.js"></script>
 </body>
 </html>

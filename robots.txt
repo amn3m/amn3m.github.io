@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://amn3m.github.io/sitemap.xml
+
+# Block unnecessary crawling
+Disallow: /sw.js
+Disallow: /.htaccess
+Disallow: /manifest.json
+
+# Allow important files
+Allow: /Pictures/
+Allow: /Ahmed_M__Abdelmoneim.pdf

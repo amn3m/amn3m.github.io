@@ -229,7 +229,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Ahmed Mohamed Abdelmoneim**
 - 🌐 Portfolio: [amn3m.github.io](https://amn3m.github.io)
 - 💼 LinkedIn: [ahmed-m-abdelmoneim](https://linkedin.com/in/ahmed-m-abdelmoneim)
-- 📧 Email: [Your Email]
+- 📧 Email: [menem.dev@gmail.com]
 - 🐙 GitHub: [@amn3m](https://github.com/amn3m)
 
 ---
